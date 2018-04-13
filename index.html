@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Conway's Game of Life</title>
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=font1|font2|etc" type="text/css">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
+		<style>
+			p, div {
+				padding: 0px 0px 0px 0px;
+				margin: 0px 0px 0px 0px;
+			}
+
+			table {
+				border-collapse: collapse;
+				background-color: black;
+				border: 5px solid black;
+			}
+
+			td {
+				width: 10px;
+				height: 10px;
+				background-color: white;
+				border: 1px solid black;
+			}
+
+			.button {
+				border: 5px solid black;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			Conway's Game of Life
+		</p>
+		<!-- TODO: write a JQuery function to take care of table generation --> 
+		<table>			
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<div class="button">
+			Previous Iteration
+		</div>
+		<div class="button">
+			Pause/Play
+		</div>
+		<div class="button">
+			Next Iteration
+		</div>
+		<p>
+			Black cells are dead and white cells are alive. Cells die when they starve (less than 3 partners) or are overcrowded (more than 3 partners). Click on a cell to kill it or create one. Use the sliders and options to set each game's properties (remember to click reset to generate a new game with those conditions).
+		</p>
+	</body>
+</html>
